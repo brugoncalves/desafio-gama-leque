@@ -5,10 +5,16 @@ class Seller(models.Model):
     name = models.CharField(max_length=200)
     email = models.EmailField()
 
+    def __str__(self):
+        return self.name
+
 
 class Product(models.Model):
     name = models.CharField(max_length=200)
     price = models.FloatField()
-    seller = models.ForeignKey(Seller, null=True, on_delete=models.SET_NULL())
+    seller = models.ForeignKey(Seller, null=True, on_delete=models.SET_NULL)
     quantity = models.IntegerField()
     status = {'ATIVO', 'INATIVO'}
+
+    def __str__(self):
+        return self.name
