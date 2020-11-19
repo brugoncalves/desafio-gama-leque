@@ -1,9 +1,26 @@
-from django.http import HttpResponse
+from django.shortcuts import render
+from rest_framework import generics, status
+from rest_framework.decorators import api_view
+from rest_framework.response import Response
+from .serializers import ProductSerializer, SellerSerializer
+from .models import Product, Seller
 
 
-def index(request):
-    return HttpResponse("Bem vindo ao Django Ladies!")
+class SellerViewSet(generics.ListCreateAPIView):
+    queryset = Seller.objects.all()
+    serializer_class = SellerSerializer
 
 
-def find_by_id(request, product_id):
-    return HttpResponse(f'Id do produto: {product_id}')
+class SellerDetailViewSet(generics.RetrieveUpdateAPIView):
+    queryset = Seller.objects.all()
+    serializer_class = SellerSerializer
+
+
+class ProductViewSet(generics.ListCreateAPIView):
+    queryset = Product.objects.all()
+    serializer_class = ProductSerializer
+
+
+class ProductDetailViewSet(generics.RetrieveUpdateAPIView):
+    queryset = Product.objects.all()
+    serializer_class = ProductSerializer

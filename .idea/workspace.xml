@@ -5,9 +5,8 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/leque/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/leque/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/leque/leque/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/leque/leque/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leque/leque/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/leque/leque/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leque/produtos/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/leque/produtos/admin.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/leque/produtos/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/leque/produtos/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leque/produtos/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/leque/produtos/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/leque/produtos/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/leque/produtos/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -74,6 +73,14 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1605740692448" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1605742101023">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1605742101023" />
+    <state x="500" y="278" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1605742063459">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="500" y="278" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728@0.0.1366.728" timestamp="1605742063459" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
