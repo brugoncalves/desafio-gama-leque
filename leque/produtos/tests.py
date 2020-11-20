@@ -1,13 +1,13 @@
 from django.test import TestCase
-from .models import Seller
-from  rest_framework.test import APIClient 
+from .models import Seller, Product
+from rest_framework.test import APIClient
 import json
 
 class SellerModelTests(TestCase):
     
     def test_class_str(self):
-        seller=Seller()
-        seller.name="Bruna"
+        seller = Seller()
+        seller.name = "Bruna"
     
         self.assertEquals(seller.__str__(),"Bruna")
 
@@ -61,7 +61,22 @@ class ProductModelTests(TestCase):
         self.assertEquals(product.to_dict(), result_product)
 
         
+class SellerViewTests(TestCase):
+    @classmethod
+    def setUpTestData(cls):
+        Seller.objects.create(name="Bruna", email="bruna@example.com")
 
-    
+    def test_get(self):
+        client = APIClient()
+        response = client.get('/produtos/sellers/')
 
+        self.assertEqual(response.status_code, 200)
 
+        data = json.loads(response.content)
+
+        self.assertEqual(data.get('count'), 1)
+
+        seller_first = data.get('results')[0]
+
+        self.assertEqual(seller_first.get("name"), "Bruna")
+        self.assertEqual(seller_first.get("email"), "bruna@example.com")
