@@ -15,13 +15,18 @@ URLs
 Para realizar POST de um produto e GET de todos os produtos cadastrados.
 http://127.0.0.1:8000/produtos/
 
-Para fazer PUT, GET por ID e inativar o produto http://127.0.0.1:8000/produtos/1/
+Para fazer PUT, GET por ID e inativar o produto 
+http://127.0.0.1:8000/produtos/{id}/
 
 Para fazer GET e POST dos sellers http://127.0.0.1:8000/produtos/sellers/
 
 
 Para fazer PUT e inativar dos sellers
-http://127.0.0.1:8000/produtos/sellers/1/
+http://127.0.0.1:8000/produtos/sellers/{id}/
+
+Testes
+
+
 
 
 
