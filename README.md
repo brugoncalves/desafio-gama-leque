@@ -16,15 +16,20 @@ Para realizar POST de um produto e GET de todos os produtos cadastrados.
 http://127.0.0.1:8000/produtos/
 
 Para fazer PUT, GET por ID e inativar o produto 
-http://127.0.0.1:8000/produtos/{id}/
+http://127.0.0.1:8000/produtos/1/
 
 Para fazer GET e POST dos sellers http://127.0.0.1:8000/produtos/sellers/
 
-
 Para fazer PUT e inativar dos sellers
-http://127.0.0.1:8000/produtos/sellers/{id}/
+http://127.0.0.1:8000/produtos/sellers/1/
+
+*O número 1 na URL corresponde ao ID do Produto e do Seller
 
 Testes
+
+Realizamos testes de unidade e de integração das rotas das classes Produto e Seller
+
+
 
 
 
