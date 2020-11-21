@@ -6,10 +6,10 @@ O Projeto Leque é uma API Restfull desenvolvida com o framework Django que perm
 
 Foram implementadas duas classes : <strong>Product</strong> e <strong>Seller</strong>
 
-Atributos do Seller:
+<h3>Atributos do Seller</h3>:
 Name e Email
 
-Atributos do Produto:
+<h3>Atributos do Produto</h3>:
 Name, Price, Seller, Quantity e Status
 
 <h2>URLs</h2>
