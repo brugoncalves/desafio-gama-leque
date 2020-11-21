@@ -27,9 +27,9 @@ http://127.0.0.1:8000/produtos/sellers/1/
 
 *<em>O número 1 na URL corresponde ao ID do Produto e do Seller</em>
 
-Testes
+<h2>Testes</h2>
 
-Realizamos testes de unidade e de integração das rotas das classes Produto e Seller
+Realizamos testes de unidade e de integração das rotas <strong>GET</strong> e <strong>POST</strong> das classes Produto e Seller
 
 
 
